@@ -4,10 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import Cohorts from "./pages/Cohorts"
 import cohortsData from './data/cohortsData'
 import CohortStudents from './pages/CohortStudents'
-
-
-
-
+import AddCohort from './pages/AddCohort'
 
 
 
@@ -40,6 +37,7 @@ const App = () => {
         <Route path='/' element={<Home/>}/>
         <Route path='/cohorts' element={<Cohorts cohorts={cohorts}/>}/>
         <Route path='/cohort/:id/' element={<CohortStudents cohorts={cohorts}/>}/>
+        <Route path='/add-cohort' element={<AddCohort />} />
       </Routes>
 
         
